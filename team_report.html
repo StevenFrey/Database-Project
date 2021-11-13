@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manager Team Report</title>
+</head>
+<style>
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #heading {
+        background-color: rgb(11, 226, 144);
+        text-align: center;
+    }
+    #home_button {
+        background-color: gray;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-top-right-radius: 20px;
+        position: relative;
+        bottom: 48px;
+    }
+</style>
+<body>
+    <div id="heading">
+        <h1>Charlotte Pharmaceutical Company</h1>
+    </div>
+
+    <a href="index.html" id="home_button">Return to the Home Page</a>
+
+    <h2>Generate Team Report</h2>
+
+    <div id="team_report_block">
+        <form name="team_report_form" method="POST" action="team_report.php">
+        
+            <p>Enter the manager ID below</p>
+            <p><input type="number" name="manager_id" max="99999" min="0" required></p>
+            <p><input type="submit" value="next>>"></p>
+
+            <p>Try entering the following manager ids:<br></p>
+            <p>2761, 7714, 7168, or 2947</p>
+            
+
+        </form>
+    </div>
+    
+</body>
+</html>
